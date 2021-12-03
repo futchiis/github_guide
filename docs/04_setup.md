@@ -17,7 +17,7 @@ gitとは直接関係ない知識なので説明は割愛します
 ```
 mkdir ~/.ssh
 cd ~/.ssh
-ssh-keygen -b 4096 -f ".~/.ssh/github"
+ssh-keygen -b 4096 -f "~/.ssh/github"
 ```
 パスフレーズは入れずに脳死エンターでもおｋ  
 
