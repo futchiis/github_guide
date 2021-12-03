@@ -7,6 +7,6 @@ git入門
 3. [インストール](./docs/03_install.md)
 4. [gitの設定](./docs/04_setup.md)
 5. [プッシュまでの流れ](./docs/05_flow.md)
-6. 
+6. [.gitignore](./docs/06_gitignore.md)
 
 (c) 2021 情報技術部github布教委員会
