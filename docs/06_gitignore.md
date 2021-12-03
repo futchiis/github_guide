@@ -49,9 +49,9 @@ git add .
 git commmit -a -m "gitignore test"
 git push origin master
 ```
-これで確認できるかと思います
+これで確認できるかと思います。  
 
 
-実はgithub公式が[サンプル](https://github.com/github/gitignore)を置いてくれてたりもします。
+実はgithub公式が[サンプル](https://github.com/github/gitignore)を置いてくれてたりもします。  
 [目次へ](../README.md)
 
