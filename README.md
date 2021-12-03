@@ -1,6 +1,8 @@
 # github_guide
 
-1. [githubとは](./docs/01_welcome.md)
+git入門
 
+1. [githubとは](./docs/01_welcome.md)
+2. [用語解説](./docs/02_words.md)
 
 
