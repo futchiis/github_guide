@@ -5,8 +5,8 @@
 後ほど使いますがリモートリポジトリと呼ばれるリポジトリもあり、一般的には複数人で共有することを目的にサーバー上に作られます。  
 
 ## Gitで管理するファイルを作成する
-### ワークディレクトリを作成する
-ワークディレクトリはGitで管理したいファイルを配置するディレクトリのことです。  
+### ワークツリーを作成する
+ワークツリーはGitで管理したいファイルを配置するディレクトリのことです。  
 本稿ではディレクトリは`git_learning`としホームディレクトリ直下に作成します。  
 以下コマンドを用いることでディレクトリを作成する事ができます。  
 
@@ -23,7 +23,7 @@ cdコマンドはChange Directoryの略で、コマンドを実行する作業�
 ```bash
 ~/git_learning $ echo #github learning > README.md
 ```
-上記コマンドで"#github learning"が書き込まれたファイルを作成することができます。  
+上記コマンドで`#github learning`が書き込まれたファイルを作成することができます。  
 
 ## ローカルリポジトリを作成する
 ファイルが準備できたら早速ローカルリポジトリを作成しましょう。  
@@ -49,7 +49,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 ### git statusの見方
-`On branch master`
+`On branch master`  
 masterブランチで作業していることを表します。ブランチについては、後ほど解説するので詳しくは割愛します。  
 `No commits yet`  
 一度もコミットしてない場合に表示されます。  
@@ -82,7 +82,7 @@ Changes to be committed:
 
 コミットする準備を終えたので、早速コミットしましょう。
 `git commit -m "コミットメッセージ"`  
-ここでは"初めてのコミット"をコミットメッセージにします。  
+ここでは`初めてのコミット`をコミットメッセージにします。  
 
 もう一度、`git status`を使って確認してましょう。  
 ```On branch master
@@ -94,9 +94,20 @@ nothing to commit, working tree clean
 ### ワークツリーの変更取り消す
 ワークツリーの変更を取り消すには`git checkout`コマンドを使います。  
 
-#### 使ってみる
-`README.md`に
+#### 一部のファイルだけ戻す場合
+`git checkout -- <file>`
 
+以下のように指定したディレクトリ以下を再帰的に戻すことも可能です。
+`git checkout -- <directly>`
+
+#### 使ってみる
+`README.md`を変更してから最後のコミットに戻します。
+
+```bash
+echo ## 変更部分 >> README.md
+git checkout -- README.md
+```
+`echo`でREADME.mdに書き出されて`git checkout`で元に戻ったことが確認できたと思います。  
 
 ### ステージングを取り消す
 ステージングを取り消すには`git reset`コマンドを使います。  
@@ -116,9 +127,12 @@ nothing to commit, working tree clean
 ```  
 `git status`コマンドでステージングできた事を確認したら`git reset`コマンドを用いて取り消します。  
 `git reset ignore.md`  
-コマンド実行後、取り消せた事を`git status`で確認してください。
+コマンド実行後、取り消せた事を`git status`で確認してください。  
+
+以降必要ないので`rm ignore.md`で`ignore.md`は削除しましょう。  
 
 ### コミットを取り消す
+
 
 
 
