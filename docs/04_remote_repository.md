@@ -1,7 +1,7 @@
 # リモートリポジトリを使う
 ## リモートリポジトリを作成する
 リモートリポジトリはコマンドでは作れないので[github.com](https://github.com)にアクセスして作成します。  
-![](https://raw.githubusercontent.com/ama-sosei/github_guide/img/create_remote_repo.png)  
+![作成ボタンの画像](https://raw.githubusercontent.com/ama-sosei/github_guide/img/create_remote_repo.png)  
 このボタンから作成ページにアクセスすることができるので、画面に沿って入力してください。  
 
 ### Repository name
@@ -22,11 +22,12 @@
 リポジトリ作成時に`README.md`を追加する場合はチェックをいれます。  
 
 ### Add .gitignore
-`.gitignore`を作成することでコミットを無視するファイルを指定することができます。  
+後ほど解説するので詳しくは割愛しますが`.gitignore`を作成することでコミットを無視するファイルを指定することができます。  
 その`.gitignore`をリポジトリ生成時に作成するかの選択です。  
 
 ### Choose a license
 ライセンスの選択です。  
+
 
 本稿では以下の設定で作成します。  
 ```

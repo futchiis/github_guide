@@ -38,5 +38,9 @@ git config --global user.email "メールアドレス"
 Gitでは様々な設定をgit configコマンドを用いて行います。  
 後々説明する為詳しくは割愛しますが、globalオプションを付加することで、作業しているユーザー全体で適用されます。  
 
+## SSH Keyの設定
+Secure Shellと呼ばれる技術で
+
+`ssh-keygen`  
 
 [目次へ](../README.md)
