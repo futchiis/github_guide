@@ -14,20 +14,16 @@
 ~/ $ cd ~/
 ~/ $ mkdir git_learning
 ```    
-cdコマンドはChange Directoryの略で、コマンドを実行する作業ディレクトリを変更する為に用いり`~/`はホームディレクトリを表します。  
-今後のコマンド操作はgit_learningディレクトリ内での実行を前提に進めるため以下コマンドを実行してください。  
-ターミナルソフトを終了や再起動した場合には毎度、作業ディレクトリを移動する必要があるので忘れず実行してください。  
-`cd ~/git_learning`
 
 ### 管理するファイルを作成する
 ```bash
-~/git_learning $ echo #github learning > README.md
+~/git_learning/ $ echo "#github learning" > README.md
 ```
 上記コマンドで`#github learning`が書き込まれたファイルを作成することができます。  
 
 ## ローカルリポジトリを作成する
-ファイルが準備できたら早速ローカルリポジトリを作成しましょう。  
-`git init`コマンドで作成する事ができます。  
+`git init`コマンドでローカルリポジトリを作成することができます。  
+作業ディレクトリにローカルリポジトリが作成されるため`~/git_learning/`に移動してから実行してください。
 
 ディレクトリの内容を確認できるコマンドに`ls`コマンドがあります。  
 隠しファイルも表示するために`ls -a`を実行すると`.git`ディレクトリが確認できると思います。  
@@ -36,7 +32,7 @@ cdコマンドはChange Directoryの略で、コマンドを実行する作業�
 ## ローカルリポジトリの状態を確認する
 `git status`コマンドを用いることでローカルリポジトリの状態を確認することができます。  
 以下が`git status`の実行結果です。  
-```~/git_learning $ git status
+```~/git_learning/ $ git status
 On branch master
 
 No commits yet
@@ -98,13 +94,16 @@ nothing to commit, working tree clean
 `git checkout -- <file>`
 
 以下のように指定したディレクトリ以下を再帰的に戻すことも可能です。
-`git checkout -- <directly>`
+`git checkout -- <directly>`  
+
+`git checkout -- .`を作業ツリーのルートディレクトリで作業ツリー全体の変更を最後のコミットまで戻すことができます。  
+
 
 #### 使ってみる
 `README.md`を変更してから最後のコミットに戻します。
 
 ```bash
-echo ## 変更部分 >> README.md
+echo "## 変更部分" >> README.md
 git checkout -- README.md
 ```
 `echo`でREADME.mdに書き出されて`git checkout`で元に戻ったことが確認できたと思います。  
@@ -122,8 +121,8 @@ git checkout -- README.md
 
 #### 使ってみる
 ひとまず、コミットしないファイルを作成し、ステージングします。  
-```~/git_learning $ echo > ignore.md
-~/git_learning $ git add ignore.md
+```~/git_learning/ $ echo > ignore.md
+~/git_learning/ $ git add ignore.md
 ```  
 `git status`コマンドでステージングできた事を確認したら`git reset`コマンドを用いて取り消します。  
 `git reset ignore.md`  
@@ -132,8 +131,7 @@ git checkout -- README.md
 以降必要ないので`rm ignore.md`で`ignore.md`は削除しましょう。  
 
 ### コミットを取り消す
-
-
+#### 
 
 
 
