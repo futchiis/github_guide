@@ -28,5 +28,14 @@
 ### Choose a license
 ライセンスの選択です。  
 
+本稿では以下の設定で作成します。  
+```
+Repository name: git_learning
+Description: 未入力
+Public OR Private: Public
+Add a README file: no
+Add .gitignore: no
+Choose a license: 選択なし
+```
 
 
