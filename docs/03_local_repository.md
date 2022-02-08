@@ -121,17 +121,21 @@ git checkout -- README.md
 
 #### 使ってみる
 ひとまず、コミットしないファイルを作成し、ステージングします。  
-```~/git_learning/ $ echo > ignore.md
-~/git_learning/ $ git add ignore.md
+```~/git_learning/ $ echo > remove.md
+~/git_learning/ $ git add remove.md
 ```  
 `git status`コマンドでステージングできた事を確認したら`git reset`コマンドを用いて取り消します。  
-`git reset ignore.md`  
+`git reset remove.md`  
 コマンド実行後、取り消せた事を`git status`で確認してください。  
 
-以降必要ないので`rm ignore.md`で`ignore.md`は削除しましょう。  
+以降必要ないので`rm remove.md`で`remove.md`は削除しましょう。  
 
 ### コミットを取り消す
-#### 
+#### 直前のコミットだけを取り消す
+コミットのみを取り消しステージングエリアやワークツリーは、一切変更したくない場合に用いります。  
+`git reset --soft `
+
+
 
 
 
