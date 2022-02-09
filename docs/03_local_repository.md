@@ -146,7 +146,6 @@ git checkout -- README.md
 ワークツリーも元に戻します。  
 `git reset --hard HEAD^`  
 
-
 ちなみに`git reset --hard HEAD`でステージングや作業ツリー全体の変更を最後のコミットまで戻すことができます。  
 
 

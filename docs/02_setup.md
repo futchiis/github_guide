@@ -30,6 +30,9 @@ GitクライアントにGithubのアカウント情報を教えてあげる必�
 
 本稿ではLinuxはbash, WindowsはGit Bashを用いて操作することを前提にコマンドを記述しています。  
 
+Windows標準のコマンドプロンプトからでも実行は可能ですがUnix系とコマンドが違うため、Windows独自コマンドを覚えるように汎用性が高いです。  
+要するにWindowsくそってことです。  
+
 ```
 git config --global user.name "Githubアカウントのユーザー名"
 git config --global user.email "メールアドレス"
