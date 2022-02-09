@@ -41,9 +41,30 @@ git config --global user.email "メールアドレス"
 Gitでは様々な設定をgit configコマンドを用いて行います。  
 後々説明する為詳しくは割愛しますが、globalオプションを付加することで、作業しているユーザー全体で適用されます。  
 
-## SSH Keyの設定
+## 公開鍵の設定
+gitクライアントから認証するために必要な設定を行います。  
+
+### 公開鍵生成
+SSHと呼ばれるプロトコルで認証を行うために必要な公開鍵を生成します。  
+`ssh-keygen -t rsa -b 8192`  
+生成場所やパスフレーズを聞かれますが脳死でエンター押しても問題ありません。  
+既に生成されてる場合上書きされるので気をつけてください。  
+
+公開鍵は`~/.ssh/id_rsa.pub`に生成されてるので中身をコピーしてください。  
+
+githubに公開鍵を登録するために[github.com/settings/ssh/new](https://github.com/settings/ssh/new)にアクセスします。  
+
+`Title`は適当に入力して`Key`に先程コピーした公開鍵をペーストしてください。  
+最後に`Add SSH Key`を押せば登録完了です。  
+
+正しく設定できたことを確認するために`ssh -T git@github.com`を実行してください。  
+
+以下が返ってきたらおkです。  
+
+```Hi ユーザー名! You've successfully authenticated, but GitHub does not provide shell access.
+```
 
 
-`ssh-keygen`  
+
 
 [目次へ](../README.md)
