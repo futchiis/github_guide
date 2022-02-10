@@ -37,7 +37,6 @@ file
 !/file
 ```
 
-
 ### 特殊な場合
 ```./
 ├── .gitignore
