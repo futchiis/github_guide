@@ -61,8 +61,7 @@ githubに公開鍵を登録するために[github.com/settings/ssh/new](https://
 
 以下が返ってきたらおkです。  
 
-```Hi ユーザー名! You've successfully authenticated, but GitHub does not provide shell access.
-```
+`Hi ユーザー名! You've successfully authenticated, but GitHub does not provide shell access.`
 
 
 
