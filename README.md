@@ -8,5 +8,8 @@ git入門
 3. [ローカルリポジトリを使う](./docs/03_local_repository.md)
 4. [リモートリポジトリを使う](./docs/04_remote_repository.md)
 5. [gitで管理しないファイル[.gitignore]](./docs/05_gitignore.md)
+6. [ブランチを使う](./docs/06_branch.md)
+
+
 
 (c) 2021 情報技術部github布教委員会
