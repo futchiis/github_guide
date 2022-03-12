@@ -17,9 +17,9 @@
 
 ### 管理するファイルを作成する
 ```bash
-~/git_learning/ $ echo "#github learning" > README.md
+~/git_learning/ $ echo "# github learning" > README.md
 ```
-上記コマンドで「`#github learning`」が書き込まれたファイル(README.md)を作成することができます。  
+上記コマンドで「`# github learning`」が書き込まれたファイル(README.md)を作成することができます。  
 
 ## ローカルリポジトリを作成する
 `git init`コマンドでローカルリポジトリを作成することができます。  

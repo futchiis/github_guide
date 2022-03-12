@@ -43,5 +43,20 @@ git checkout dev
 ```  
 この一連の操作は`git checkout -b dev`で行うこともできます。
 
+## devブランチに変更を加える
+`README.md`に変更を加えてコミットします。  
+
+```bash
+~/git_learning/ $ echo "## devでの変更" >> README.md
+~/git_learning/ $ git add README.md
+~/git_learning/ $ git commit -m "devブランチで変更"
+```  
+
+リモートリポジトリにも`dev`ブランチを作成し変更をアップロードします。  
+```bash
+~/git_learning/ $ git push origin dev
+```  
+このように第二引数にブランチ名を指定することでリモートリポジトリにも`dev`ブランチを作成することができます。
+
 [目次へ](../README.md)
 
