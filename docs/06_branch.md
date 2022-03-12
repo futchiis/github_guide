@@ -6,4 +6,42 @@ gitで管理する履歴を枝分かれさせるための機能です。
 
 ## ブランチを作る
 ブランチを作るには`git branch`コマンドを使います。  
+ここではブランチ名を`dev`とし作成します。  
+```bash
+~/git_learning/ $ git branch dev
+```  
+
+## ブランチ一覧を表示する
+ブランチが作成されたことを確認するためにブランチ一覧を表示させます。  
+ブランチ一覧はブランチ名を指定せず`git branch`コマンドを実行することで確認できます。  
+```bash
+~/git_learning/ $ git branch
+  dev
+* master
+```  
+先頭にアスタリスク`*`が表示されているのが、今使ってるブランチです。  
+
+## チェックアウトする
+ブランチを切り替えることをチェックアウトと言います。  
+チェックアウトするには`git checkout`コマンドを用いります。  
+```bash
+~/git_learning/ $ git checkout dev
+```  
+
+チェックアウトできたことを確認するために`git branch`コマンドを実行しましょう。  
+このような表示になっていればでおｋです。  
+```bash
+~/git_learning/ $ git branch
+* dev
+  master
+```
+
+## 作成とチェックアウトを同時に行う
+```bash
+git branch dev
+git checkout dev
+```  
+この一連の操作は`git checkout -b dev`で行うこともできます。
+
+[目次へ](../README.md)
 
