@@ -10,7 +10,17 @@ git入門
 5. [gitで管理しないファイル[.gitignore]](./docs/05_gitignore.md)
 6. [ブランチを使う](./docs/06_branch.md)
 6. [マージする](./docs/07_merge.md)
+8. [プルリクエスト](./docs/08_pull_request.md)
 
+<!--
+8. プルリクエスト
+9. Organization
+10. その他のgithubの機能
+	1. github gists
+	2. github actions
+	3. special repositories
+	4. REST API
+-->
 
 
 (c) 2021 情報技術部github布教委員会
