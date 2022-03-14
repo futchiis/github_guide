@@ -52,6 +52,7 @@ git checkout dev
 ~/git_learning/ $ git commit -m "devブランチで変更"
 ```  
 
+## リモートリポジトリに変更を反映する
 リモートリポジトリにも`dev`ブランチを作成し変更をアップロードします。  
 ```bash
 ~/git_learning/ $ git push origin dev
