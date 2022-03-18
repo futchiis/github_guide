@@ -21,9 +21,18 @@ git入門
 	2. チェックアウト
 6. [マージする](./docs/07_merge.md)
 8. [プルリクエスト](./docs/08_pull_request.md)
+<<<<<<< Updated upstream
 	1. fork ・ clone
 	2. pull request
 
+=======
+<<<<<<< Updated upstream
+=======
+	1. fork ・ clone
+	2. pull request
+9. [特別なリポジトリとファイル](./docs/)
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
 <!--
 8. プルリクエスト
