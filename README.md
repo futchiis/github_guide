@@ -25,6 +25,10 @@ git入門
 	2. pull request
 9. [特別なリポジトリとファイル](./docs/)
 
+
+付録
+- (良いコミットメッセージの書き方)[docs/appendix/good_commitment_message.md]
+
 <!--
 8. プルリクエスト
 9. special repositories
