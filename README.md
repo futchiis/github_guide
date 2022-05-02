@@ -27,7 +27,9 @@ git入門
 
 
 付録
-- (良いコミットメッセージの書き方)[docs/appendix/good_commitment_message.md]
+- (良いコミットメッセージの書き方)[./docs/appendix/good_commitment_message.md]
+- (ローカルリポジトリでの操作を取り消し)[./docs/appendix/undo_commit.md]
+
 
 <!--
 8. プルリクエスト
