@@ -110,7 +110,7 @@ nothing to commit, working tree clean
 ```  
 これは全ての変更がコミットされ、ワーキングツリーとコミットに相違がないことをあらわしています。  
 
-コミットメッセージの書き方については(ここ)[docs/appendix/good_commitment_message.md]を参照してください。  
+コミットメッセージの書き方については[ここ](./appendix/good_commitment_message.md)を参照してください。  
 
 ### 複数行のコミットメッセージを書く
 `-m 'コミットメッセージ'`を付加せず`git commit`だけで実行することでエディターが開くので記述後、エディターを終了することで反映されます。  
@@ -120,7 +120,7 @@ nothing to commit, working tree clean
 ほとんど使わないけどできることは覚えとくといいでしょう  
 
 ## 操作を取り消すには
-ローカルリポジトリでの取り消し動作については(ここ)[docs\appendix\undo_commit.md]を参照してください。
+ローカルリポジトリでの取り消し動作については[ここ](./appendix/undo_commit.md)を参照してください。
 
 ## ファイルの差分を確認する
 ファイルの修正前と修正後の違いを差分と言います。  
