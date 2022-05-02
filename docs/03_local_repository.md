@@ -47,7 +47,8 @@
 ## ローカルリポジトリの状態を確認する
 `git status`コマンドを用いることでローカルリポジトリの状態を確認することができます。  
 以下が`git status`の実行結果です。  
-```~/git_learning/ $ git status
+```
+~/git_learning/ $ git status
 On branch master
 
 No commits yet
@@ -84,7 +85,8 @@ git add README.md
 ステージング後の変更はコミットに反映されないので注意してください。  
 
 ステージングされたか`git status`コマンドを用いて確認してみましょう。以下のような表示に変わっていればステージングできています。  
-```On branch master
+```
+On branch master
 
 No commits yet
 
